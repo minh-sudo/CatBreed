@@ -52,7 +52,10 @@ num_classes = len(class_names)
 # weights = MobileNet_V2_Weights.IMAGENET1K_V1
 model = mobilenet_v2(weights=None) 
 
-model.load_state_dict(torch.load("D:/python/bt_ai/mobilenet_v2-b0353104.pth"))
+# ĐÚNG ĐƯỜNG DẪN FILE
+model.load_state_dict(torch.load("D:/python/bt_ai/mobilenet_v2-b0353104.pth")) 
+
+
 model.eval()
 
 # Freeze phần feature nếu muốn huấn luyện nhanh
