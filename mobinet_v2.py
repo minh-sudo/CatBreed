@@ -33,7 +33,7 @@ transform = {
 }
 
 # 3. LOAD DU LIEU TU THU MUC 'data'
-data_dir = 'D:/python/bt_ai/data'
+data_dir = 'data'
 batch_size = 32
 
 datasets = {
@@ -53,7 +53,7 @@ num_classes = len(class_names)
 model = mobilenet_v2(weights=None) 
 
 # ĐÚNG ĐƯỜNG DẪN FILE
-model.load_state_dict(torch.load("D:/python/bt_ai/mobilenet_v2-b0353104.pth")) 
+model.load_state_dict(torch.load("mobilenet_v2-b0353104.pth")) 
 
 
 model.eval()
